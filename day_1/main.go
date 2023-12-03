@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main()  {
+func puzzle_1()  {
 	file, err := os.Open("./input")
 	if err != nil{
 		panic("error while reading the input file")
@@ -51,7 +51,11 @@ func main()  {
 		}
 
 	}
-	fmt.Println("result final",result_val)
+	fmt.Println("puzzle 1 result",result_val)
+}
+
+func main()  {
+	puzzle_1()
 }
 
 
